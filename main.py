@@ -1,7 +1,5 @@
-import threading
 import tkinter as tk
 from tkinter import ttk
-import markdown
 import pyperclip
 from tkinter import filedialog
 import configparser
@@ -10,11 +8,9 @@ from pathlib import Path
 
 config = configparser.ConfigParser()
 
-cfg_file_path = Path("config/vis.ini")
+cfg_file_path = Path("config/cfg.ini")
 cfg_files = config.read(cfg_file_path)
 
-setting_cfg_file_path = Path("config/cfg.ini")
-setting_cfg_files = config.read(setting_cfg_file_path)
 
 font_color = config["TEXT"]["font_color"]
 bg_color = config["TEXT"]["bg_color"]
@@ -22,7 +18,7 @@ top_bar_bg_color = config["TEXT"]["top_bar_bg_color"]
 active_bg_top_color = config["TEXT"]["active_bg_top_color"]
 
 ###
-always_on_top_bool = config["CFG"]["always_on_top"]
+always_on_top_bool = config["SETTINGS"]["always_on_top"]
 
 
 
@@ -120,7 +116,6 @@ root.update_idletasks()
 root.geometry("+%d+%d"%(geometryX, geometryY))
 root.overrideredirect(True)
 
-#root.attributes('-topmost', True)
 
 icon_image = tk.PhotoImage(file="./assets/icon.png")
 icon_close = tk.PhotoImage(file="./assets/close.png")
@@ -152,6 +147,7 @@ status_label.pack(side="bottom", anchor="w")
 
 find_text_box = tk.Entry(root,fg=font_color,bg='#258564',)
 find_text_box.pack(side= "top",anchor="e")
+find_text_box.destroy()
 
 content_text = tk.Text(root,fg=font_color,height=8,bg= bg_color, undo=True)
 content_text.pack(padx=20, pady= 20, expand=True,fill=tk.BOTH)
@@ -162,6 +158,7 @@ content_text.pack(padx=20, pady= 20, expand=True,fill=tk.BOTH)
 
 # functions in list
 def open_text_file():
+    global current_dir
     file_path = filedialog.askopenfilename(title="Select a Text File", filetypes=[("Text files", "*.txt"), ("All files", "*.*")])
     if file_path:
         with open(file_path, 'r') as file:
@@ -169,11 +166,12 @@ def open_text_file():
             content_text.delete(1.0, tk.END)  # Clear  content
             content_text.insert(tk.END, content) # add content
             current_dir = file_path
-            write_to_cache(current_dir)
+            #write_to_cache(current_dir)
+            status_label.config(text=f"File Opened: {file_path}")
 
 
 def Save_text_file():
-    file_path = filedialog.asksaveasfilename(TEXTextension=".txt", filetypes=[("Text files", "*.txt"), ("All files", "*.*")])
+    file_path = filedialog.asksaveasfilename(title="Save File",defaultextension=".txt",filetypes=[("Text files", "*.txt"), ("All files", "*.*")])
     if file_path:
         try:
             with open(file_path, 'w',encoding="utf-8") as file:
@@ -185,11 +183,14 @@ def Save_text_file():
 
 
 def save_content():
-    if current_dir == "":
+    global current_dir
+    content = content_text.get("1.0", "end-1c")
+
+    if not current_dir:
         Save_text_file()
-    else:
-        content = content_text.get("1.0", "end-1c")
-        current_dir.write(content)
+        return
+    with open(current_dir, "w", encoding="utf-8") as file:
+        file.write(content)
 
 ###################################
 
@@ -197,9 +198,9 @@ def save_content():
 file_functions_list = {"Open text file": open_text_file,"Save": save_content,"Save as":Save_text_file}
 
 # Dropdown button
-file_menu_button = tk.Menubutton(top_bar,text="Files",relief="raised",direction="below",bg= bg_color,fg= font_color ,activebackground= active_bg_top_color)
+file_menu_button = tk.Menubutton(top_bar,text="Files",relief="raised",direction="below",bg= bg_color ,fg= font_color,activebackground= active_bg_top_color)
 
-files_menu = tk.Menu(file_menu_button, tearoff=0)
+files_menu = tk.Menu(file_menu_button, tearoff=0,bg= bg_color ,fg= font_color,activebackground= active_bg_top_color )
 
 for i in file_functions_list:
     files_menu.add_command(label=i,command=file_functions_list[i]),file_menu_button.config(menu=files_menu),file_menu_button.pack(side="left")
@@ -256,9 +257,9 @@ def replace_content():
 edit_functions_list = {"Undo": undo_content,"Redo": redo_content ,"Cut": cut_content,"Copy":copy_content,"Paste":paste_content,"Find":find_content,"Replace":replace_content}
 
 # Dropdown button
-edit_menu_button = tk.Menubutton(top_bar,text="Edit",relief="raised",direction="below",fg=font_color , bg= top_bar_bg_color , activebackground= active_bg_top_color)
+edit_menu_button = tk.Menubutton(top_bar,text="Edit",relief="raised",direction="below",bg= bg_color ,fg= font_color,activebackground= active_bg_top_color)
 
-edit_files_menu = tk.Menu(edit_menu_button, tearoff=0)
+edit_files_menu = tk.Menu(edit_menu_button, tearoff=0,bg= bg_color ,fg= font_color,activebackground= active_bg_top_color )
 
 for i in edit_functions_list :
     edit_files_menu.add_command(label=i,command=edit_functions_list[i]),edit_menu_button.config(menu=edit_files_menu),edit_menu_button.pack(side="left")
@@ -274,6 +275,7 @@ def always_on_top():
 
 
 def color():
+    global current_dir 
     current_dir = cfg_file_path
     with open(cfg_file_path, 'r') as file:
         content = file.read()
