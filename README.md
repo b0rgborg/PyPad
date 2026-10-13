@@ -1,4 +1,4 @@
-[![Contributors][contributors-shield]][contributors-url]
+io[![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
@@ -58,11 +58,13 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-why 
+Why : why did i make this 
 
-when 
+When: 
 
-how
+How:
+
+The future:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -70,7 +72,7 @@ how
 
 ### Built With Python
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+The major framework used in this project were tkinter path 
 
  ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)[Python-url]
 
@@ -137,6 +139,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 - [x] Text Editor
 - [ ] Add Cache 
 - [ ] Maybe add more features (like line numbers)
+- [ ] Add external comp
 - [ ] Multi-language Support
     - [ ] Chinese
     - [ ] Spanish
