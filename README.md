@@ -17,9 +17,9 @@ io[![Contributors][contributors-shield]][contributors-url]
 
   <p align="center">
     An open source alternative to notepad written in python with basic frameworks.
-    <br />
-    <--a href="https://github.com/othneildrew/Best-README-Template"--><--strong-->Explore the docs »<--/strong><--/a-->
-    <br />
+
+
+
   </p>
 </div>
 
@@ -68,70 +68,32 @@ The future:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+### Screenshot
+
+<br />
+<div align="left">
+    <img src="assets/screenshot.png" alt="Logo" width="300" height="300">
+  </a>
+  </p>
+</div>
+
+### Built With Python 
+ ![Python-url[Python]](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+ 
+The major framework used in this project were tkinter , Pathlib 
 
 
-### Built With Python
-
-The major framework used in this project were tkinter path 
-
- ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)[Python-url]
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- GETTING STARTED -->
-## Getting Started
-
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
-
-### Installation
-
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/github_username/repo_name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
-5. Change git remote url to avoid accidental pushes to base project
-   ```sh
-   git remote set-url origin github_username/repo_name
-   git remote -v # confirm the changes
-   ```
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 <!-- USAGE EXAMPLES -->
-## Usage
+## Usage / Instalation
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
+Unzip the folder click inside the folder called main then click on Pynotepad.exe 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- ROADMAP -->
 ## Roadmap
@@ -140,6 +102,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 - [ ] Add Cache 
 - [ ] Maybe add more features (like line numbers)
 - [ ] Add external comp
+- [ ] Linux and MacOS support 
 - [ ] Multi-language Support
     - [ ] Chinese
     - [ ] Spanish
@@ -158,9 +121,9 @@ If you have a suggestion that would make this better, please fork the repo and c
 Don't forget to give the project a star! Thanks again!
 
 1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
+2. Create your Feature Branch 
+3. Commit your Changes 
+4. Push to the Branch 
 5. Open a Pull Request
 
 
@@ -169,6 +132,8 @@ Don't forget to give the project a star! Thanks again!
 ## License
 
 Distributed under the GPL-3.0 license
+
+https://github.com/b0rgborg/pynotepad?tab=GPL-3.0-1-ov-file
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
