@@ -246,11 +246,11 @@ def paste_content():
 
 #word 
 def find_content():
-    print("feature not added ")
+    pass
 
 
 def replace_content():
-    print("feature not added ")
+    pass
 
 ################
 # map funcs
