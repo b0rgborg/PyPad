@@ -1,7 +1,7 @@
-# PyNotepad
+# PyPad
 
 <div align="center">
-  <img src="assets/icon.png" alt="PyNotepad logo" width="100" height="100" />
+  <img src="assets/icon.png" alt="PyPad logo" width="100" height="100" />
 
   <h3> A simple, open-source text editor built with Python </h3>
 
@@ -25,7 +25,7 @@
 
 ## About the Project
 
-**PyNotepad** is an open-source text editor developed in Python. The project was created as a way to explore how Python can be used to work with plain-text documents and build desktop applications.
+**PyPad** is an open-source text editor developed in Python. The project was created as a way to explore how Python can be used to work with plain-text documents and build desktop applications.
 
 The goal is to provide a simple text-editing experience while learning and experimenting with Python's GUI and file-handling capabilities.
 
@@ -38,11 +38,11 @@ The goal is to provide a simple text-editing experience while learning and exper
 
 ## Screenshot
 
-![PyNotepad screenshot](assets/Screenshot.png)
+![PyPad screenshot](assets/Screenshot.png)
 
 ## Built With
 
-PyNotepad is built using the following technologies:
+PyPad is built using the following technologies:
 
 - [Python](https://www.python.org/) — Core programming language.
 - [Tkinter](https://docs.python.org/3/library/tkinter.html) — Desktop graphical user interface.
@@ -55,7 +55,7 @@ PyNotepad is built using the following technologies:
 The current release is distributed as a Windows executable.
 
 - Windows
-- A downloaded copy of PyNotepad
+- A downloaded copy of PyPad
 
 If you want to run the project from source, you will also need Python installed.
 
@@ -65,11 +65,11 @@ If you want to run the project from source, you will also need Python installed.
 2. Extract the downloaded archive if necessary.
 3. Open the project folder.
 4. Open the `main` folder.
-5. Double-click `Pynotepad.exe` to launch the application.
+5. Double-click `PyPad.exe` to launch the application.
 
 ## Usage
 
-Launch `Pynotepad.exe` from the `main` folder to start using PyNotepad.
+Launch `PyPad.exe` from the `main` folder to start using PyPad.
 
 The application is designed as a straightforward text editor. Check the project for the features currently implemented in the latest version.
 
@@ -92,7 +92,7 @@ Suggestions and contributions are welcome. Roadmap items may change as the proje
 
 This project is distributed under the **GNU General Public License v3.0 (GPL-3.0)**, as indicated by the repository's license reference.
 
-See the [repository license](https://github.com/b0rgborg/pynotepad) for the full terms.
+See the [repository license](https://github.com/b0rgborg/PyPad) for the full terms.
 
 ## Acknowledgments
 
