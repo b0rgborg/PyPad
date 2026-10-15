@@ -1,176 +1,143 @@
-io[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
+# PyNotepad
 
+[![Contributors](https://img.shields.io/github/contributors/b0rgborg/pynotepad?style=for-the-badge)](https://github.com/b0rgborg/pynotepad/graphs/contributors)
+[![Forks](https://img.shields.io/github/forks/b0rgborg/pynotepad?style=for-the-badge)](https://github.com/b0rgborg/pynotepad/network/members)
+[![Stars](https://img.shields.io/github/stars/b0rgborg/pynotepad?style=for-the-badge)](https://github.com/b0rgborg/pynotepad/stargazers)
+[![Issues](https://img.shields.io/github/issues/b0rgborg/pynotepad?style=for-the-badge)](https://github.com/b0rgborg/pynotepad/issues)
+[![License](https://img.shields.io/github/license/b0rgborg/pynotepad?style=for-the-badge)](https://github.com/b0rgborg/pynotepad)
 
-
-
-<!-- PROJECT LOGO -->
-<br />
 <div align="center">
-  <a href="https://github.com/b0rgborg/pynotepad">
-    <img src="assets/icon.png" alt="Logo" width="80" height="80">
-  </a>
+  <img src="assets/icon.png" alt="PyNotepad logo" width="100" height="100" />
 
-  <h3 align="center">PyNotepad</h3>
+  <h3> A simple, open-source text editor built with Python </h3>
 
-  <p align="center">
-    An open source alternative to notepad written in python with basic frameworks.
-
-
-
+  <p>
+    A lightweight alternative to Notepad, built to explore Python's capabilities
+    for working with text files and desktop applications.
   </p>
 </div>
 
+---
 
+## Table of Contents
 
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ol>
-</details>
+- [About the Project](#about-the-project)
+- [Screenshot](#screenshot)
+- [Built With](#built-with)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Roadmap](#roadmap)
+- [Contributing](#contributing)
+- [License](#license)
+- [Acknowledgments](#acknowledgments)
 
+## About the Project
 
+**PyNotepad** is an open-source text editor developed in Python. The project was created as a way to explore how Python can be used to work with plain-text documents and build desktop applications.
 
-<!-- ABOUT THE PROJECT -->
-## About The Project
+The goal is to provide a simple text-editing experience while learning and experimenting with Python's GUI and file-handling capabilities.
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+### Project Goals
 
-Why : why did i make this 
+- Build a functional desktop text editor.
+- Explore GUI development with Tkinter.
+- Work with files and filesystem paths using `pathlib`.
+- Gradually introduce new features and platform support.
 
-When: 
+## Screenshot
 
-How:
+![PyNotepad screenshot](assets/screenshot.png)
 
-The future:
+## Built With
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+PyNotepad is built using the following technologies:
 
-### Screenshot
+- [Python](https://www.python.org/) — Core programming language.
+- [Tkinter](https://docs.python.org/3/library/tkinter.html) — Desktop graphical user interface.
+- [pathlib](https://docs.python.org/3/library/pathlib.html) — Filesystem path handling.
 
-<br />
-<div align="left">
-    <img src="assets/screenshot.png" alt="Logo" width="300" height="300">
-  </a>
-  </p>
-</div>
+## Getting Started
 
-### Built With Python 
- ![Python-url[Python]](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
- 
-The major framework used in this project were tkinter , Pathlib 
+### Prerequisites
 
+The current release is distributed as a Windows executable.
 
+- Windows
+- A downloaded copy of PyNotepad
 
+If you want to run the project from source, you will also need Python installed.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+### Installation
 
+1. Download or clone this repository.
+2. Extract the downloaded archive if necessary.
+3. Open the project folder.
+4. Open the `main` folder.
+5. Double-click `Pynotepad.exe` to launch the application.
 
-<!-- USAGE EXAMPLES -->
-## Usage / Instalation
+## Usage
 
-Unzip the folder click inside the folder called main then click on Pynotepad.exe 
+Launch `Pynotepad.exe` from the `main` folder to start using PyNotepad.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+The application is designed as a straightforward text editor. Check the project for the features currently implemented in the latest version.
 
-<!-- ROADMAP -->
 ## Roadmap
 
-- [x] Text Editor
-- [ ] Add Cache 
-- [ ] Maybe add more features (like line numbers)
-- [ ] Add external comp
-- [ ] Linux and MacOS support 
-- [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
+Planned improvements and potential features:
 
+- [x] Basic text editor
+- [ ] Add caching
+- [ ] Add line numbers and other editing features
+- [ ] Add external component support
+- [ ] Support Linux and macOS
+- [ ] Add multilingual support
+  - [ ] Chinese
+  - [ ] Spanish
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+Suggestions and contributions are welcome. Roadmap items may change as the project develops.
 
-
-
-<!-- CONTRIBUTING -->
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+Contributions, suggestions, and bug reports are welcome!
 
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
+To contribute:
 
-1. Fork the Project
-2. Create your Feature Branch 
-3. Commit your Changes 
-4. Push to the Branch 
-5. Open a Pull Request
+1. Fork the repository.
+2. Create a feature branch.
+   ```bash
+   git checkout -b feature/your-feature
+   ```
+3. Make your changes.
+4. Commit your changes.
+   ```bash
+   git commit -m "Add your feature"
+   ```
+5. Push your branch.
+   ```bash
+   git push origin feature/your-feature
+   ```
+6. Open a pull request.
 
+You can also [open an issue](https://github.com/b0rgborg/pynotepad/issues) to report a bug or suggest an enhancement.
 
+If you find PyNotepad useful, consider giving the project a  on GitHub!
 
-<!-- LICENSE -->
 ## License
 
-Distributed under the GPL-3.0 license
+This project is distributed under the **GNU General Public License v3.0 (GPL-3.0)**, as indicated by the repository's license reference.
 
-https://github.com/b0rgborg/pynotepad?tab=GPL-3.0-1-ov-file
+See the [repository license](https://github.com/b0rgborg/pynotepad) for the full terms.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-<!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-Some of the resources I used 
-* [Stack overflow](https://stackoverflow.com/questions)
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
-* [Malven's Grid Cheatsheet](https://grid.malven.co/)
-* [Img Shields](https://shields.io)
-* [GitHub Pages](https://pages.github.com)
-* [Font Awesome](https://fontawesome.com)
-* [React Icons](https://react-icons.github.io/react-icons/search)
-* [Markdownchecker](https://harshkapadia2.github.io/preview-markdown/)
+Resources that helped during development:
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+- [Stack Overflow](https://stackoverflow.com/questions)
+- [Tkinter documentation](https://docs.python.org/3/library/tkinter.html)
+- [Markdown Preview](https://harshkapadia2.github.io/preview-markdown/)
 
+---
 
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
-[product-screenshot]: images/screenshot.png
-[Python-url]: https://www.python.org/
-[Python-badge]:https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white
+<div align="center">
+  <sub>Built with Python and a curiosity for learning.</sub>
+</div>
