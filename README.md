@@ -27,7 +27,6 @@
 - [Getting Started](#getting-started)
 - [Usage](#usage)
 - [Roadmap](#roadmap)
-- [Contributing](#contributing)
 - [License](#license)
 - [Acknowledgments](#acknowledgments)
 
@@ -42,11 +41,11 @@ The goal is to provide a simple text-editing experience while learning and exper
 - Build a functional desktop text editor.
 - Explore GUI development with Tkinter.
 - Work with files and filesystem paths using `pathlib`.
-- Gradually introduce new features and platform support.
+
 
 ## Screenshot
 
-![PyNotepad screenshot](assets/screenshot.png)
+![PyNotepad screenshot](assets/Screenshot.png)
 
 ## Built With
 
@@ -95,32 +94,6 @@ Planned improvements and potential features:
   - [ ] Spanish
 
 Suggestions and contributions are welcome. Roadmap items may change as the project develops.
-
-## Contributing
-
-Contributions, suggestions, and bug reports are welcome!
-
-To contribute:
-
-1. Fork the repository.
-2. Create a feature branch.
-   ```bash
-   git checkout -b feature/your-feature
-   ```
-3. Make your changes.
-4. Commit your changes.
-   ```bash
-   git commit -m "Add your feature"
-   ```
-5. Push your branch.
-   ```bash
-   git push origin feature/your-feature
-   ```
-6. Open a pull request.
-
-You can also [open an issue](https://github.com/b0rgborg/pynotepad/issues) to report a bug or suggest an enhancement.
-
-If you find PyNotepad useful, consider giving the project a  on GitHub!
 
 ## License
 
