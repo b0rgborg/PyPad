@@ -1,11 +1,5 @@
 # PyNotepad
 
-[![Contributors](https://img.shields.io/github/contributors/b0rgborg/pynotepad?style=for-the-badge)](https://github.com/b0rgborg/pynotepad/graphs/contributors)
-[![Forks](https://img.shields.io/github/forks/b0rgborg/pynotepad?style=for-the-badge)](https://github.com/b0rgborg/pynotepad/network/members)
-[![Stars](https://img.shields.io/github/stars/b0rgborg/pynotepad?style=for-the-badge)](https://github.com/b0rgborg/pynotepad/stargazers)
-[![Issues](https://img.shields.io/github/issues/b0rgborg/pynotepad?style=for-the-badge)](https://github.com/b0rgborg/pynotepad/issues)
-[![License](https://img.shields.io/github/license/b0rgborg/pynotepad?style=for-the-badge)](https://github.com/b0rgborg/pynotepad)
-
 <div align="center">
   <img src="assets/icon.png" alt="PyNotepad logo" width="100" height="100" />
 
@@ -27,7 +21,6 @@
 - [Getting Started](#getting-started)
 - [Usage](#usage)
 - [Roadmap](#roadmap)
-- [License](#license)
 - [Acknowledgments](#acknowledgments)
 
 ## About the Project
